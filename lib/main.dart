@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +10,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter_Whatsapp_Interface',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primaryColor:),
+      theme: ThemeData(
+        primaryColor: Color(0xFF4FCE5D),
+        colorScheme:
+            ColorScheme.fromSwatch().copyWith(secondary: Color(0xFFFFFFFF)),
+        backgroundColor: Color(0xFF435A64),
+      ),
     );
   }
 }
